@@ -1,6 +1,6 @@
 FROM quay.io/eclipse/che-java8-maven:7.37.2
 
-MAINTAINER tech-tejendra
+MAINTAINER selvi
 
 USER root
 
@@ -8,7 +8,7 @@ COPY src /home/app/src
 COPY pom.xml /home/app
 
 #ERROR
-#RUN nocmd
+RUN nocmd
 
 RUN mkdir -p /var/local/SP
 
